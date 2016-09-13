@@ -1,0 +1,44 @@
+//Easy semantic version based off describe + tags
+def getVersionName = { ->
+  def stdout = new ByteArrayOutputStream()
+  exec {
+    commandLine 'git', 'describe', '--tags', '--dirty', '--long'
+    standardOutput = stdout
+  }
+  def tagVer = stdout.toString().trim()
+  def semVer = (tagVer =~ /v([\d\.]+)/)[0][1]
+
+  if (tagVer.contains('dev')) {
+    semVer += "-SNAPSHOT"
+  }
+  return semVer
+}
+
+description = "Kryptnostic development environment."
+group = "com.kryptnostic"
+version = getVersionName()
+if ( !ext.has("jars") ){
+  ext.developmentMode = true
+}
+
+allprojects {
+  apply plugin: "jacoco"
+  if ( !ext.has("jars") ){
+    ext.developmentMode = true
+  }
+}
+
+task getVersions(description: "Print the current versions of all local projects") << {
+  logger.warn("\nCurrent project versions: ")
+  subprojects.each { project ->
+    logger.warn("${project.name}:${project.version}")
+  }
+}
+
+import groovy.json.JsonSlurper
+
+task wrapper(type: Wrapper) {
+  def p = ['curl', "http://services.gradle.org/versions/current"].execute()
+  def json = new JsonSlurper().parseText(p.text)
+  gradleVersion = json.version
+}
