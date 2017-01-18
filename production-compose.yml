@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  zeppelin:
+    image: kryptnostic/zeppelin:0.6.1
+    ports:
+      - "9001:8080"
+
+  datastore:
+    image: registry.krypt.int:5000/kryptnostic/datastore:0.0.0-SNAPSHOT
+    depends_on:
+      - conductor
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8086:8080"
+
+  conductor:
+    image: registry.krypt.int:5000/kryptnostic/kryptnostic-conductor:0.0.1-SNAPSHOT
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /kindling/build/libs/:/kindling/build/libs
+    ports:
+      - "5701:5701"
+      - "8087:8080"

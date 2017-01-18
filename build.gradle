@@ -28,10 +28,12 @@ allprojects {
   }
 }
 
-task getVersions(description: "Print the current versions of all local projects") << {
-  logger.warn("\nCurrent project versions: ")
-  subprojects.each { project ->
-    logger.warn("${project.name}:${project.version}")
+task getVersions(description: "Print the current versions of all local projects") {
+  doLast {
+    logger.warn("\nCurrent project versions: ")
+    subprojects.each { project ->
+      logger.warn("${project.name}:${project.version}")
+    }
   }
 }
 

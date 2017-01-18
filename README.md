@@ -1,5 +1,3 @@
-# ![ Super ] (super.png)
-
 Loom Superproject
 ==============================
 
@@ -10,15 +8,18 @@ This superproject helps you get started building on the Kryptnostic platform by 
 Getting started
 ==============================
 
-* Ensure your [ssh-keys are generated](https://help.github.com/articles/generating-ssh-keys). Add them to [Stash](http://stash.krypt.int) and [Github](http://github.com).
+* Ensure your [ssh-keys are generated](https://help.github.com/articles/generating-ssh-keys). Add them to [Github](http://github.com).
 * Clone the superproject and all of its submodules:
 
-        git clone ssh://git@stash.krypt.int:7999/kryp/loom.git --recurse-submodules
+        git clone ssh://git@github.com/dataloom/loom.git --recurse-submodules
+
+* Install and start Cassandra 3.9 (`brew install cassandra` and `cassandra` on OS X)
+* Install and start ElasticSearch 5.x (`brew install elasticsearch` and `elasticsearch -E cluster.name=loom_development` on OS X)
 
 Eclipse environment setup
 ==============================
 
-* From the `kryptnostic` directory, run the "eclipse" gradle task to set up the appropriate Eclipse project structure
+* From the `loom` directory, run the "eclipse" gradle task to set up the appropriate Eclipse project structure
 
         ./gradlew eclipse
 
@@ -26,30 +27,24 @@ Eclipse environment setup
     * The root directory is the `loom` superproject directory (wherever that might be on your local filesystem)
     * Import all of the selected projects
 
-Running locally (first time)
+IntelliJ environment setup
+==============================
+
+We've found that using the built-in Import project at the root level works better than trying to use the gradle project generator. You should also enable annotation processing in the IntelliJ settings.
+
+
+Running locally 
 ==============================
 
 * Ensure that:
     * You've completed the "Getting started" section above
     * Xcode is installed and you've agreed to the license
     * `JAVA_HOME` is configured properly and JDK 8 is installed
-    * wget is installed via `brew install wget`
-    * [`cmake`](https://cmake.org) is installed and in your `PATH`
-    * You have installed Docker: https://www.docker.com/products/docker#/mac
+    
 * Optional:
-    * Install gradle via `brew install gradle` `// running commands with gradle 'command' will generally run faster than ./gradlew but gradlew is portable`
+    * Install gradle via `brew install gradle` `// running commands with gradle will generally run faster than ./gradlew but gradlew is portable`
 
 # From the `loom` superproject directory:
-
-* Build images from your local code
-
-    `./gradlew docker`
-
-* Run the full stack. Comment out anything you dont want to run in docker-compose.yml
-
-    `./runStack.sh`
-
-* Open [localhost/app](localhost/app) in your browser
 
 Tools provided
 ==============================
@@ -66,4 +61,4 @@ We manage subprojects using [git submodules](https://git-scm.com/book/en/v2/Git-
 If a new subproject needs to be added:
 
 * edit **settings.gradle** to add it as a gradle subproject
-* run `git submodule add ssh://git@stash.krypt.int:7999/kryp/<subproject>`
+* run `git submodule add ssh://git@github.com/dataloom/<subproject>`

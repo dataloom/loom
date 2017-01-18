@@ -1,0 +1,42 @@
+[submodule "kryptnostic-conductor"]
+	path = kryptnostic-conductor
+	url = git@github.com:dataloom/conductor.git
+[submodule "datastore"]
+	path = datastore
+	url = git@github.com:dataloom/datastore.git
+[submodule "rhizome"]
+	path = rhizome
+	url = git@github.com:kryptnostic/rhizome.git
+[submodule "kryptnostic-conductor-client"]
+	path = kryptnostic-conductor-client
+	url = git@github.com:dataloom/conductor-client.git
+[submodule "kindling"]
+	path = kindling
+	url = git@github.com:dataloom/kindling.git
+[submodule "slate"]
+	path = slate
+	url = git@github.com:kryptnostic/slate.git
+[submodule "gallery"]
+	path = gallery
+	url = git@github.com:kryptnostic/gallery.git
+[submodule "slingshot"]
+	path = slingshot
+	url = git@github.com:kryptnostic/slingshot.git
+[submodule "shuttle-java"]
+	path = shuttle-java
+	url = git@github.com:kryptnostic/shuttle-java.git
+[submodule "loom-api"]
+	path = loom-api
+	url = git@github.com:dataloom/loom-api.git
+[submodule "gradles"]
+	path = gradles
+	url = git@github.com:kryptnostic/gradles.git
+[submodule "rhizome-client"]
+	path = rhizome-client
+	url = git@github.com:dataloom/rhizome-client.git
+[submodule "courier"]
+	path = courier
+	url = git@github.com:dataloom/courier.git
+[submodule "scribe"]
+	path = scribe
+	url = git@github.com:dataloom/scribe.git
