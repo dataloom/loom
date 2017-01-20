@@ -40,3 +40,6 @@
 [submodule "scribe"]
 	path = scribe
 	url = git@github.com:dataloom/scribe.git
+[submodule "integrations"]
+	path = integrations
+	url = git@github.com:dataloom/integrations.git
