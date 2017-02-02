@@ -1,4 +1,4 @@
-rootProject.name='kryptnostic-dev'
+rootProject.name='dataloom-dev'
 
 include 'datastore'
 include 'kindling'
