@@ -1,5 +1,5 @@
-[submodule "kryptnostic-conductor"]
-	path = kryptnostic-conductor
+[submodule "conductor"]
+	path = conductor
 	url = git@github.com:dataloom/conductor.git
 [submodule "datastore"]
 	path = datastore
@@ -7,8 +7,8 @@
 [submodule "rhizome"]
 	path = rhizome
 	url = git@github.com:kryptnostic/rhizome.git
-[submodule "kryptnostic-conductor-client"]
-	path = kryptnostic-conductor-client
+[submodule "conductor-client"]
+	path = conductor-client
 	url = git@github.com:dataloom/conductor-client.git
 [submodule "kindling"]
 	path = kindling
