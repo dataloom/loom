@@ -24,7 +24,7 @@
 	url = git@github.com:kryptnostic/slingshot.git
 [submodule "shuttle-java"]
 	path = shuttle-java
-	url = git@github.com:kryptnostic/shuttle-java.git
+	url = git@github.com:dataloom/shuttle.git
 [submodule "loom-api"]
 	path = loom-api
 	url = git@github.com:dataloom/loom-api.git
