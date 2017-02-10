@@ -22,8 +22,8 @@
 [submodule "slingshot"]
 	path = slingshot
 	url = git@github.com:kryptnostic/slingshot.git
-[submodule "shuttle-java"]
-	path = shuttle-java
+[submodule "shuttle"]
+	path = shuttle
 	url = git@github.com:dataloom/shuttle.git
 [submodule "loom-api"]
 	path = loom-api

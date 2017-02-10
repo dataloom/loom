@@ -2,7 +2,7 @@ rootProject.name='dataloom-dev'
 
 include 'datastore'
 include 'kindling'
-include 'shuttle-java'
+include 'shuttle'
 include 'conductor'
 include 'conductor-client'
 include 'rhizome'
