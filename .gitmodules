@@ -43,3 +43,6 @@
 [submodule "integrations"]
 	path = integrations
 	url = git@github.com:dataloom/integrations.git
+[submodule "neuron"]
+	path = neuron
+	url = git@github.com:dataloom/neuron.git
