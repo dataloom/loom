@@ -12,6 +12,7 @@ include 'rhizome-client'
 include 'courier'
 include 'scribe'
 include 'mechanic'
+include 'hive-auth0'
 
 //Integrations projects
 include 'integrations'
