@@ -6,7 +6,7 @@
 	url = git@github.com:dataloom/datastore.git
 [submodule "rhizome"]
 	path = rhizome
-	url = git@github.com:kryptnostic/rhizome.git
+	url = git@github.com:dataloom/rhizome.git
 [submodule "conductor-client"]
 	path = conductor-client
 	url = git@github.com:dataloom/conductor-client.git
@@ -18,10 +18,10 @@
 	url = git@github.com:kryptnostic/slate.git
 [submodule "gallery"]
 	path = gallery
-	url = git@github.com:kryptnostic/gallery.git
+	url = git@github.com:dataloom/gallery.git
 [submodule "slingshot"]
 	path = slingshot
-	url = git@github.com:kryptnostic/slingshot.git
+	url = git@github.com:dataloom/slingshot.git
 [submodule "shuttle"]
 	path = shuttle
 	url = git@github.com:dataloom/shuttle.git
