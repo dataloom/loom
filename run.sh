@@ -12,7 +12,7 @@ DATASTORE_XMX="12g"
 DATASTORE_ARGS="cassandra aws"
 
 #Neuron JVM settings
-NEURON_XMS=4g"
+NEURON_XMS="4g"
 NEURON_XMX="4g"
 NEURON_ARGS="cassandra aws"
 
