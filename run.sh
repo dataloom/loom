@@ -1,3 +1,4 @@
+#!/bin/bash
 # Total available RAM: 62g
 
 # Conductor JVM settings
