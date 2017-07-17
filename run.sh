@@ -22,7 +22,7 @@ nohup ./gradlew :conductor:run > /dev/null 2>&1& echo $! >conductor.pid
 sleep 20
 nohup ./gradlew :datastore:run > /dev/null 2>&1& echo $! >datastore.pid
 sleep 20
-nohup ./gradlew :datastore:neuron > /dev/null 2>&1& echo $! >datastore.pid
+nohup ./gradlew :neuron:run > /dev/null 2>&1& echo $! >neuron.pid
 sleep 10
 
 tail -f ./logging/conductor.log ./datastore.log ./neuron.log
