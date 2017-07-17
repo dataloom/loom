@@ -13,6 +13,7 @@ include 'courier'
 include 'scribe'
 include 'mechanic'
 include 'hive-auth0'
+include 'neuron'
 
 //Integrations projects
 include 'integrations'
