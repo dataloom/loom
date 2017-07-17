@@ -25,4 +25,4 @@ sleep 20
 nohup ./gradlew :neuron:run > /dev/null 2>&1& echo $! >neuron.pid
 sleep 10
 
-tail -f ./logging/conductor.log ./datastore.log ./neuron.log
+tail -f ./logging/conductor.log ./logging/datastore.log ./logging/neuron.log
