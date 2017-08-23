@@ -24,7 +24,7 @@
 	url = git@github.com:dataloom/slingshot.git
 [submodule "shuttle"]
 	path = shuttle
-	url = git@github.com:dataloom/shuttle.git
+	url = git@github.com:openlattice/shuttle.git
 [submodule "loom-api"]
 	path = loom-api
 	url = git@github.com:dataloom/loom-api.git
