@@ -52,3 +52,6 @@
 [submodule "hive-auth0"]
 	path = hive-auth0
 	url = git@github.com:openlattice/hive-auth0.git
+[submodule "socrates"]
+	path = socrates
+	url = git@github.com:openlattice/socrates.git

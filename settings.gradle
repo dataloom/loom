@@ -12,9 +12,10 @@ include 'rhizome-client'
 include 'courier'
 include 'scribe'
 include 'mechanic'
-include 'hive-auth0'
+//include 'hive-auth0'
 include 'neuron'
 include 'synapse'
+include 'socrates'
 
 //Integrations projects
 include 'integrations'
